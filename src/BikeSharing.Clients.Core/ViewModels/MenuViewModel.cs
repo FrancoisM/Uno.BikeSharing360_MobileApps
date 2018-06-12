@@ -163,6 +163,8 @@ namespace BikeSharing.Clients.Core.ViewModels
                 ViewModelType = typeof(ProfileViewModel),
                 IsEnabled = true
             });
+
+			Console.WriteLine($"MenuItems: {MenuItems.Count}");
         }
 
         private async void OnSelectItem(MenuItem item)

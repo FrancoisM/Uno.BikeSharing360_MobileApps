@@ -4,10 +4,10 @@ namespace BikeSharing.Clients.Core
 {
     public static class GlobalSettings
     {
-        public const string AuthenticationEndpoint = "http://YOUR_PROFILE_SERVICE.azurewebsites.net/";
-        public const string EventsEndpoint = "http://YOUR_EVENTS_SERVICE.azurewebsites.net/";
-        public const string IssuesEndpoint = "http://YOUR_ISSUES_SERVICE.azurewebsites.net/";
-        public const string RidesEndpoint = "http://YOUR_RIDES_SERVICE.azurewebsites.net/";
+        public const string AuthenticationEndpoint = "https://bikesharing-services-feedbackwqpqdshbevpqm.azurewebsites.net";
+        public const string EventsEndpoint = "https://bikesharing-services-eventswqpqdshbevpqm.azurewebsites.net";
+        public const string IssuesEndpoint = "https://bikesharing-services-feedbackwqpqdshbevpqm.azurewebsites.net";
+        public const string RidesEndpoint = "https://bikesharing-services-rideswqpqdshbevpqm.azurewebsites.net";
 
         public const string OpenWeatherMapAPIKey = "YOUR_WEATHERMAP_API_KEY";
 

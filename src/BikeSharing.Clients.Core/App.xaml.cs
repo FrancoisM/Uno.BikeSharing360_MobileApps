@@ -15,7 +15,7 @@ namespace BikeSharing.Clients.Core
 
             AdaptColorsToHexString();
 
-            if(Device.OS == TargetPlatform.Windows)
+            // if(Device.OS == TargetPlatform.Windows)
             {
                 InitNavigation();
             }
@@ -31,13 +31,15 @@ namespace BikeSharing.Clients.Core
             }
         }
 
-        private Task InitNavigation()
+        private async Task InitNavigation()
         {
+			System.Console.WriteLine("-> InitNavigation()");
             var navigationService = ViewModelLocator.Instance.Resolve<INavigationService>();
-            return navigationService.InitializeAsync();
-        }
+            await navigationService.InitializeAsync();
+			System.Console.WriteLine("<- InitNavigation()");
+		}
 
-        private void AdaptColorsToHexString()
+		private void AdaptColorsToHexString()
         {
             for (var i = 0; i < this.Resources.Count; i++)
             {
